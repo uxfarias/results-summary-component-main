@@ -1,6 +1,17 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,20 +20,65 @@
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: hsl(221, 100%, 96%);
-}
-
-#content {
-    background-color: white;
-    padding: 1em;
-    border-radius: 1em;
-    width: 250px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
 }
 
-#resultado {
-    background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+#container1 {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 250px;
 }
+
+#container1 > h1 {
+    margin: 2em;
+    font-size: 1em;
+    color: var(--light-lavender);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: 150px;
+}
+
+.resultado > h1 {
+    font-size: 2.6em;
+}
+
+.resultado > p {
+    color: var(--light-lavender);
+    font-size: 0.8em;
+}
+
+#container1 > h2 {
+    font-size: 1.5em;
+}
+
+#container1 > p {
+    padding: 1em 1em 2em 1em;
+    font-size: 0.8em;
+    color: var(--light-lavender);
+}
+
+#container2 {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#container2 h1 {
+    font-size: 1.5em;
+}
+
